@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    
+    .btn{
+        position: absolute;
+        right: 120px;
+        top: 40px;
+    }
+    .btn , button {
+        margin: 10px 0;
+    }
+  
+    ul,li {
+        display: flex;
+        margin: 0px 10px;
+        padding: 10px 10px;
+        background-color: rgb(0, 1, 0);
+        color: aliceblue;
+        border: 3px solid;
+        width: 500px;
+    }
+    
+ 
+    </style>
+</head>
+<body>
+    <div id = "total">
+        <div class = "inner">
+            <p>
+                你喜歡哪個城市?
+            </p>
+            <ul id = "city">
+                <li id = "bj">北京</li>
+                <li>上海</li>
+                <li>東京</li>
+                <li>首爾</li>
+            </ul>
+
+            <br>
+            <br>
+
+            <p>
+                你喜歡哪個單機遊戲?
+            </p>
+            <ul id = "game">
+                <li>紅警</li>
+                <li>實況</li>
+                <li>極品飛車</li>
+                <li>魔獸</li>
+            </ul>
+
+            <br  />
+            <br  />
+
+            <p>
+                你的手機操作系統是?
+            </p>
+
+            <ul id = "phone">
+                <li>IOS</li>
+                <li id = "Android">Android</li>
+                <li>Windows phone</li>
+            </ul>
+        </div>
+
+
+        <div class = "inner">
+            gender
+            <input type="radio" name = "gender" value = "male">
+            Male
+            <input type="radio" name = "gender" value = "Female">
+            Female
+            <br>
+            <br>
+            <input type="text" name = "name" id = "username" value = "abcde">
+        </div>
+
+        <div id = "btnList" class = "btn">
+            <div><button id = "btn01">查找bj節點</button></div>
+            <div><button id = "btn02">查找所有li節點</button></div>
+            <div><button id = "btn03">查找name = gender的所有節點</button></div>
+            <div><button id = "btn04">查找city下所有li節點</button></div>
+            <div><button id = "btn05">返回city所有子節點</button></div>
+            <div><button id = "btn06">返回phone的第一個子節點</button></div>
+            <div><button id = "btn07">返回bj的父節點</button></div>
+            <div><button id = "btn08">返回android的前一個兄弟節點</button></div>
+            <div><button id = "btn09">返回username的value屬性值</button></div>
+            <div><button id = "btn10">設置username的value屬性值</button></div>
+            <div><button id = "btn11">返回bj的文本值</button></div>
+        </div>
+
+    </div>
+
+
+    <script src="DOM查詢.js"></script>
+</body>
+</html>
